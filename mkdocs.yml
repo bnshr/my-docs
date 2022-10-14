@@ -1,5 +1,30 @@
 site_name: My Testing Site
-site_url: ""
-repo_url: https://github.com/bnshr/my-docs
 theme:
   name: material
+  feature:
+    tabs: true
+    highlightjs: true
+    hljs_languages:
+    - yaml
+    - go
+markdown_extensions:
+- toc:
+    permalink: true
+- admonition
+- smarty
+- extra
+- codehilite
+- markdown_include.include:
+    base_path: docs
+- pymdownx.magiclink
+- pymdownx.superfences
+- pymdownx.details
+- pymdownx.mark
+- pymdownx.arithmatex:
+    generic: true
+plugins:
+- search
+
+nav:
+  - 'index.md'
+  - Developers' Guide: 'developers.md'
