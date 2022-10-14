@@ -1,4 +1,4 @@
-site_name: My Docs
-site_url: https://my-docs.github.io
+site_name: My Testing Site
+site_url: ""
 theme:
   name: material
